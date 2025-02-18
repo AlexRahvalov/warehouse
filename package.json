@@ -1,0 +1,35 @@
+{
+  "name": "warehouse-management",
+  "version": "1.0.0",
+  "description": "Warehouse Management System",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "prepare": "bun run prepare:all",
+    "prepare:all": "bun install && bun run prepare:backend && bun run prepare:frontend",
+    "prepare:backend": "cd backend && bun install && bun prisma generate",
+    "prepare:frontend": "cd frontend && bun install",
+    "dev": "bun run dev:backend & bun run dev:frontend",
+    "dev:backend": "cd backend && bun run start:dev",
+    "dev:frontend": "cd frontend && bun run dev",
+    "build": "bun run build:backend && bun run build:frontend",
+    "build:backend": "cd backend && bun run build",
+    "build:frontend": "cd frontend && bun run build",
+    "start": "bun run start:backend & bun run start:frontend",
+    "start:backend": "cd backend && bun run start:prod",
+    "start:frontend": "cd frontend && bun run start"
+  },
+  "keywords": [
+    "warehouse",
+    "management",
+    "inventory"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+} 

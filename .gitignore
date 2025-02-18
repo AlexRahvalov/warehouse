@@ -1,2 +1,49 @@
-.obsidian
+# Dependency directories
+node_modules/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Prisma
+prisma/migrations/
+prisma/dev.db
+
+# Bun specific
+.bun/
+bun.lockb
+
+# Frontend build
+frontend/.nuxt/
+frontend/dist/
+
+# Backend build
+backend/dist/
+
+# Temporary files
+*.tmp
+*.bak
+
+.obsidian/
 start.md
